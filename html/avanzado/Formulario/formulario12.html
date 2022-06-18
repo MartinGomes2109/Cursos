@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>seleccionar un club de futbol</h1>
+    <form action="action_page.php" target="_blank" method="POST">
+        <label for="nombre">nombre:</label>
+        <input type="text" id="nombre" name="name" placeholder="nombre aqui"><br>
+        <label for="apellido">apellido:</label>
+        <input type="text" id="apellido" name="name" placeholder="apellido aqui"><br>
+        <input type="radio" id="barcelona" name="club" value="barcelona">
+        <label for="barcelona">barcelona</label><br>
+        <input type="radio" id="madrid" name="club" value="madrid">
+        <label for="madrid">madrid</label><br>
+        <input type="radio" id="chelse" name="club" value="chelse">
+        <label for="chelse">chelse</label><br>
+        <input type="submit" value="enviar"><br>
+        <input type="reset" value="borrar">  
+    </form>
+    <form>
+        <br>
+        <label for="usuario">usuario</label><br>
+        <input type="text" id="usuario" name="user" placeholder="usuario aqui"><br>
+        <label for="pass">contraseña</label><br>
+        <input type="password" id="pass" name="user"><br><br>        
+        <br>
+        <input type="checkbox" id="boca" name="club" value="boca">
+        <label for="boca">boca</label>
+        <input type="checkbox" id="river" name="club" value="river">
+        <label for="river">river</label>
+        <br>
+        <br>
+        <input type="reset" value="borrar">
+        <input type="button" onclick="alert('mensaje enviado')" value="enviar">
+    </form>
+</body>
+</html>
+    <!--_self:envia la info en la misma ventana, _blank: envia a otra pestaña-->
+    <!--action: archivo de php con el que trabaja-->

@@ -1,0 +1,16 @@
+/* h1{
+    animation-name: animaciontanio;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animaciontanio{
+    0%{
+        font-size: 10px;
+        color: red;
+    }
+    100%{
+        font-size: 100px;
+        color: lawngreen;
+    }
+} */

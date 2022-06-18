@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <br>
+        <button onclick="playpause()">play/pause</button>
+        <button onclick="completa()">completa</button>
+        <button onclick="normal()">normal</button>
+        <br>
+        <video id="ejemplo" width="360" poster="imagen.jpg">
+            <source src="NS - Opening 07.mp4">
+        </video>
+    </div>
+    <script>
+        var mi_video = document.getElementById("ejemplo")
+        function playpause() {
+            if (mi_video.paused) {
+                mi_video.play();
+            }
+            else
+            mi_video.pause();
+        }
+        function completa() {
+            mi_video.width = 720;
+        }
+        function normal() {
+            mi_video.width = 360;
+        }
+    </script>
+    <br>
+    <iframe src="https://www.youtube.com/embed/kB6hFAhVnT8?controls=0" frameborder="0"></iframe>
+</body>
+</html>

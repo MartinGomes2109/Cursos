@@ -1,0 +1,8 @@
+#fondo{
+    padding: 25px;
+    border: 12px solid red;
+    width: 340px;
+    height: 280px;
+    background: url(plato.png) center/180px no-repeat,
+    url(mesa.jpg) center/cover no-repeat;   
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #7AACBF;
+    color: #7AACBF;
+    font-family: sans-serif;
+}
+.formulario{
+    width: 350px;
+    background: #010D26;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+input[type="text"]{
+    width: 100%;
+    background: none;
+    color: #7AACBF;
+    border: 1px solid #7AACBF;
+    padding: auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+input[type="password"]{
+    width: 100%;
+    background: none;
+    color: #7AACBF;
+    border: 1px solid #7AACBF;
+    padding: auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+input[type="radio"]{
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 35%;
+}
+input[type="email"]{
+    width: 100%;
+    background: none;
+    color: #7AACBF;
+    border: 1px solid #7AACBF;
+    padding: auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+.seleccion{
+    width: 100%;
+    background: #010D26;
+    color: #7AACBF;
+    border: 1px solid #7AACBF;
+    padding: auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+input[type="tel"]{
+    width: 100%;
+    background: none;
+    color: #7AACBF;
+    border: 1px solid #7AACBF;
+    padding: auto;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+input[type="submit"]{
+    background: #7AACBF;
+    border: none;
+    cursor: pointer;
+    color: #010D26;
+    border: 1px solid #7AACBF;
+    width: 100%;
+    margin-left: 35%;
+}
+input[type="submit"]:hover{
+    background: #010D26;
+    transition: .6s;
+    color: #7AACBF;
+}

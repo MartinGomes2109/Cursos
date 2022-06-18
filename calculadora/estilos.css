@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #8573d6;
+}
+.caja{
+    width: 250px;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #535252;
+    text-align: center;
+    border-radius: 24px;
+}
+.caja h1{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.caja input[type = "text"]:focus,.caja input[type = "type"]:focus{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #8573d6;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.caja input[type = "text"],.caja input[type = "type"]{
+    width: 240px;
+    border-color: white;
+}
+.caja input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid #8573d6;
+    border-radius: 24px;
+    padding: 10px 30px;
+    outline: none;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.caja input[type = "submit"]:hover{
+    background: #8573d6;
+}
+.caja output[type = "number"]{
+    color: #8573d6;
+    font-size: 30px;
+}

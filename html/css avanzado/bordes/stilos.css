@@ -1,0 +1,14 @@
+#b{
+    border: 15px solid greenyellow;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    border-image-source: url(marco.png);
+    border-image-slice: 25%;
+    border-image-repeat: repeat round;
+    border-image-width: 30px;
+    border-image-outset: 10px;
+}

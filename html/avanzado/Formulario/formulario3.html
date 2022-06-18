@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <br>
+        <label for="fecha">Fecha de Nacimiento</label><br>
+        <input type="date" id="fecha" name="f nac"><br>
+        <h1>comprar tickets</h1>
+        <label for="datomax"> fecha de compra</label>
+        <input type="date" id="datomax" name="fec" max="2021-09-21" min="2021-01-01"><br>
+        <label for="phone">ingrese su numero:</label>
+        <input type="tel" id="phone" pattern="[0-9]{4}-[0-9]{6}" placeholder="xxxx-xxxxxx" required>
+        <br>
+        <input type="submit" value="enviar">
+        <br><br>
+    </form>
+    <form>
+        <label for="cantidad">numero de entrada</label>
+        <input type="number" id="cantidad" max="12" min="1"><br>
+        <input type="submit" value="enviar">
+        <br><br>
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nom" size="15"><br>
+        <label for="pin">pin:</label>
+        <input type="text" id="pin" name="pin" size="6"><br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

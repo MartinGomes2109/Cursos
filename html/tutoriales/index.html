@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Load page with Ajax Demo</title>
+<meta name="description" content="Load page with Ajax Demo..."/>
+<meta name="author" content="Jose Aguilar">
+<link rel="shortcut icon" href="https://www.jose-aguilar.com/blog/wp-content/themes/jaconsulting/favicon.ico" />
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#div-btn1').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#central").load('inc/presentation.php');
+        return false;
+    });
+
+    $('#div-btn2').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#central").load('inc/products.php');
+        return false;
+    });
+
+    $('#div-btn3').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#central").load('inc/news.php');
+        return false;
+    });
+
+    $('#div-btn4').on('click', function() {
+        $('.navbar-nav li').removeClass('active');
+        $("#central").load('inc/contact.php');
+        return false;
+    });
+});
+</script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://www.jose-aguilar.com/">
+        <img src="https://www.jose-aguilar.com/blog/wp-content/themes/jaconsulting/images/jose-aguilar.png" width="30" height="30" alt="Jose Aguilar">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="https://www.jose-aguilar.com/scripts/base-bootstrap/">Demo <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="https://www.jose-aguilar.com/scripts/jquery/page-ajax/page-ajax.zip">Descargar</a>
+            <a class="nav-item nav-link" href="https://www.jose-aguilar.com/blog/cargar-contenido-sin-recargar-la-pagina/">Tutorial</a>
+            <a class="nav-item nav-link" href="https://www.jose-aguilar.com/">&copy; Jose Aguilar</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h1>Load page with Ajax Demo</h1>
+    <h2 class="lead">Selecciona una opción del menú para ver el efecto.</h2>
+    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="https://www.jose-aguilar.com/blog/">Blog</a></li>
+          <li class="breadcrumb-item"><a href="https://www.jose-aguilar.com/blog/cargar-contenido-sin-recargar-la-pagina/">Tutorial</a></li>
+          <li class="breadcrumb-item active">Load page with Ajax Demo</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div id="content" class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Menu Ajax</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn1" href="#">Presentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn2" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn3" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="div-btn4" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="central">
+                <div id="central-content">
+                    <div class="jumbotron">
+                    <div class="container">
+                      <h1 class="display-3">Hello, world!</h1>
+                      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Bloque de anuncios adaptable -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6676636635558550"
+                 data-ad-slot="8523024962"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h5 class="card-header">Comparte en las redes sociales</h5>
+        <div class="card-body">
+            <h5 class="card-title">¿Te ha servido este ejemplo? Comparte con tus amigos</h5>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ecc1a47193e29e4" async="async"></script>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_sharing_toolbox"></div>
+        </div>
+    </div>
+
+    <div class="footer-content row">
+        <div class="col-lg-12">
+            <div class="pull-right">
+                <a href="https://www.jose-aguilar.com/blog/cargar-contenido-sin-recargar-la-pagina/" class="btn btn-secondary">
+                    <i class="fa fa-reply"></i> volver al tutorial
+                </a>
+                <a href="https://www.jose-aguilar.com/scripts/jquery/page-ajax/page-ajax.zip" class="btn btn-primary">
+                    <i class="fa fa-download"></i> Descargar
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<footer class="footer bg-dark">
+    <div class="container">
+        <span class="text-muted"><a href="https://www.jose-aguilar.com/">&copy; Jose Aguilar</a></span>
+    </div>
+</footer>
+</body>
+</html>
